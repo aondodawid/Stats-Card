@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      header,
+      p,
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #0a0c1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      * {
+        font-family: "Inter", sans-serif;
+        box-sizing: border-box;
+      }
+      main {
+        background-color: #1b1937;
+        overflow: hidden;
+        width: 327px;
+        height: auto;
+      }
+      header {
+        background-color: #ab5cdb;
+      }
+      article {
+        text-align: center;
+        height: 100%;
+        padding: 0 12%;
+        color: white;
+        margin: 1.5rem 0;
+        padding: auto;
+        margin: auto;
+      }
+      img {
+        width: 327px;
+        height: 100%;
+        display: block;
+        opacity: 0.5;
+      }
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2rem;
+        margin: 0.5rem 0;
+      }
+      article > p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+        opacity: 0.75;
+        margin: 1rem 0;
+      }
+
+      span {
+        color: #ab5cdb;
+      }
+      .paragraph--number {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+      }
+      .paragraph--text {
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+      }
+      div {
+        margin-top: 1.5rem;
+      }
+      @media screen and (min-width: 1000px) {
+        img {
+          width: 100%;
+        }
+        header {
+          width: 50%;
+        }
+        article {
+          width: 50%;
+        }
+        h1 {
+          font-size: 2.25rem;
+          font-weight: 700;
+          line-height: 2rem;
+          margin: 0.5rem 0;
+        }
+        main {
+          width: 1100px;
+          display: flex;
+          flex-direction: row-reverse;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          border-radius: 8px;
+        }
+        .wrapper--information {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img
+          src="./images/image-header-mobile.jpg"
+          srcet="./images/image-header-mobile.jpg 375w, ./images/image-header-desktop.jpg "
+          alt="header picture"
+        />
+      </header>
+      <article>
+        <h1>Get <span>insights</span> that help your business grow.</h1>
+        <p>
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="wrapper--information">
+          <div>
+            <p class="paragraph--number">10k+</p>
+            <p class="paragraph--text">Companies</p>
+          </div>
+          <div>
+            <p class="paragraph--number">314</p>
+            <p class="paragraph--text">Templates</p>
+          </div>
+          <div>
+            <p class="paragraph--number">12M+</p>
+            <p class="paragraph--text">Queries</p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
